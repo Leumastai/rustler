@@ -1,0 +1,16 @@
+[Unit]
+Description= My First Rust Application
+
+[Service]
+User=alijoe
+Group=www-data
+# The user www-data should own this directory
+WorkingDirectory=/home/alijoe/Documents/rust_prods/rocket-app-v1                        
+Environment="ROCKET_ENV=prod"
+Environment="ROCKET_ADDRESS=127.0.0.1"
+Environment="ROCKET_PORT=8000"
+Environment="ROCKET_DATABASES={sqlite_db_path={url=./database.sqlite}}"
+ExecStart=/home/alijoe/Documents/rust_prods/rocket-app-v1/getting_started_apis 
+
+[Install]
+WantedBy=multi-user.target

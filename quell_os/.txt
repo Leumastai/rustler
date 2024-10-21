@@ -1,0 +1,6 @@
+
+[Some Unscripted Notes Here]
+- Rust toolchain is a configuration that can be used to specify some custome
+configuration for the current project you're working on.
+
+- x86_64-quell_os.json is the target specification for whatever our os runs on.
